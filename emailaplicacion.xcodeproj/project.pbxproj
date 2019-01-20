@@ -12,6 +12,8 @@
 		6BEB43B521F2E95C00D1F74A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BEB43B321F2E95C00D1F74A /* Main.storyboard */; };
 		6BEB43B721F2E95D00D1F74A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6BEB43B621F2E95D00D1F74A /* Assets.xcassets */; };
 		6BEB43BA21F2E95D00D1F74A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6BEB43B821F2E95D00D1F74A /* LaunchScreen.storyboard */; };
+		6BEB43C221F2EA2500D1F74A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6BEB43C121F2EA2500D1F74A /* GoogleService-Info.plist */; };
+		A57BB8F6B76144DB5A3FD76E /* Pods_emailaplicacion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9F6BDE71072860F23CB80DFD /* Pods_emailaplicacion.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,10 @@
 		6BEB43B621F2E95D00D1F74A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6BEB43B921F2E95D00D1F74A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6BEB43BB21F2E95D00D1F74A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6BEB43C121F2EA2500D1F74A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		763ACDEF31A6D5066627318D /* Pods-emailaplicacion.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-emailaplicacion.debug.xcconfig"; path = "Pods/Target Support Files/Pods-emailaplicacion/Pods-emailaplicacion.debug.xcconfig"; sourceTree = "<group>"; };
+		9F6BDE71072860F23CB80DFD /* Pods_emailaplicacion.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_emailaplicacion.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5D51DA037D733711804AD50 /* Pods-emailaplicacion.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-emailaplicacion.release.xcconfig"; path = "Pods/Target Support Files/Pods-emailaplicacion/Pods-emailaplicacion.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A57BB8F6B76144DB5A3FD76E /* Pods_emailaplicacion.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2D34A52B8F9C3899CFA70FF3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				763ACDEF31A6D5066627318D /* Pods-emailaplicacion.debug.xcconfig */,
+				F5D51DA037D733711804AD50 /* Pods-emailaplicacion.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		3D15A3A828B6E9E1C36748BE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9F6BDE71072860F23CB80DFD /* Pods_emailaplicacion.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6BEB43A321F2E95C00D1F74A = {
 			isa = PBXGroup;
 			children = (
 				6BEB43AE21F2E95C00D1F74A /* emailaplicacion */,
 				6BEB43AD21F2E95C00D1F74A /* Products */,
+				2D34A52B8F9C3899CFA70FF3 /* Pods */,
+				3D15A3A828B6E9E1C36748BE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +80,7 @@
 		6BEB43AE21F2E95C00D1F74A /* emailaplicacion */ = {
 			isa = PBXGroup;
 			children = (
+				6BEB43C121F2EA2500D1F74A /* GoogleService-Info.plist */,
 				6BEB43AF21F2E95C00D1F74A /* AppDelegate.swift */,
 				6BEB43B121F2E95C00D1F74A /* ViewController.swift */,
 				6BEB43B321F2E95C00D1F74A /* Main.storyboard */,
@@ -71,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6BEB43BE21F2E95D00D1F74A /* Build configuration list for PBXNativeTarget "emailaplicacion" */;
 			buildPhases = (
+				048F94912838DBA346199680 /* [CP] Check Pods Manifest.lock */,
 				6BEB43A821F2E95C00D1F74A /* Sources */,
 				6BEB43A921F2E95C00D1F74A /* Frameworks */,
 				6BEB43AA21F2E95C00D1F74A /* Resources */,
+				15A0D6C11A13C204B4E266B8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,12 +152,64 @@
 			buildActionMask = 2147483647;
 			files = (
 				6BEB43BA21F2E95D00D1F74A /* LaunchScreen.storyboard in Resources */,
+				6BEB43C221F2EA2500D1F74A /* GoogleService-Info.plist in Resources */,
 				6BEB43B721F2E95D00D1F74A /* Assets.xcassets in Resources */,
 				6BEB43B521F2E95C00D1F74A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		048F94912838DBA346199680 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-emailaplicacion-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		15A0D6C11A13C204B4E266B8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-emailaplicacion/Pods-emailaplicacion-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-emailaplicacion/Pods-emailaplicacion-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6BEB43A821F2E95C00D1F74A /* Sources */ = {
@@ -280,9 +361,11 @@
 		};
 		6BEB43BF21F2E95D00D1F74A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 763ACDEF31A6D5066627318D /* Pods-emailaplicacion.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8W8ZZFD464;
 				INFOPLIST_FILE = emailaplicacion/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -297,9 +380,11 @@
 		};
 		6BEB43C021F2E95D00D1F74A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5D51DA037D733711804AD50 /* Pods-emailaplicacion.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8W8ZZFD464;
 				INFOPLIST_FILE = emailaplicacion/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
